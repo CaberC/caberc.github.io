@@ -1,44 +1,77 @@
 <!DOCTYPE html>
-<!--
-Author - Caber Caldwell
-To Be Used as Demo and Portfolio
--->
 <html lang="en">
 <head>
-  <title>Caber Caldwell</title>
-
-  <link href="CSS/main.css" rel="stylesheet">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icons/manifest-icon-192.maskable.png" />
+    <title>Business Source News</title>
+    <script src="loadHolidayPage.js"></script>
+    <script src="loadHomePage.js"></script>
+    <script src="LoadNewsPage.js"></script>
+    <script src="loadWeatherPage.js"></script>
 </head>
-
-<header>
-  <h1><a href="index.html">Caber Caldwell</a></h1>
-
-  <nav>
-    <ul> 
-      <li><a href="HTML/page1.html">ONE</a></li>
-      <li><a href="HTML/page2.html">TWO</a></li>
-    </ul>
-  </nav>
-</header>
-
 <body>
-  <h2 class="bd">Hello and Welcome</h2>
+    <div id="header">
+        <img id="logo" src="images/BSN Logo.png" alt="Business Source News Logo">
+        <div id="titleContainer">
+            <h1 id="title" class="font white">Business Source News</h1>
+        </div>
+    </div>
 
-  <p class="bd">abcdefghijklmnopqrstuwxyz abcdefghijklmnopqrstuwxyz abcdefghijklm<br> &ensp;Lorem ipsum sapien auctor vestibulum rutrum non, sed aliquet euismod vehicula donec class, mattis class erat curabitur aptent. Turpis neque erat non facilisis proin dictumst eleifend condimentum, cubilia volutpat sem at maecenas sodales elit. Lorem nostra tempus phasellus ornare varius himenaeos tempor aptent eu a consectetur, conubia euismod ligula eu senectus lectus taciti mattis tempus feugiat donec, dolor sit semper phasellus proin platea mi tortor amet curabitur.
-    <br>&emsp;Laoreet vehicula nec interdum quisque ut iaculis himenaeos fermentum elementum, nullam inceptos magna ante quisque platea elit orci, praesent aliquet felis placerat rutrum a sociosqu laoreet. Gravida justo imperdiet euismod morbi odio inceptos iaculis curabitur sagittis nisi, phasellus volutpat molestie potenti lobortis nunc orci vehicula velit torquent netus, quam blandit molestie ultricies nunc habitant turpis convallis egestas. Venenatis porta quam nullam id rutrum non velit viverra pharetra per pharetra iaculis quisque, lobortis augue proin vel sodales magna litora eu commodo nibh commodo venenatis.</p>
+    <div id="navBar">
+        <div id="homeContainer" class="navButton">
+            <h3 class="pageTitle white font">Home</a>
+        </div>
+        <div id="newsContainer" class="navButton">
+            <h3 class="pageTitle white font">News</a>
+        </div>
+        <div id="weatherContainer" class="navButton">
+            <h3 class="pageTitle white font">Weather</a>
+        </div>
+        <div id="holidayContainer" class="navButton">
+            <h3 class="pageTitle white font">Holidays</a>
+        </div>
+    </div>
+
+    <div id="divider"></div>
+
+    <button id="notifications">Notifications</button>
+    <button id="install">Install, pls</button>
+    <button id="refresh" style="visibility: hidden;">Refresh</button>
+
+    <div id="pageContentContainer">
+
+        <div id="teamTitleContainer">
+            <h2 id="ourTeam" class="blue font">Our Team</h2>
+        </div>
+    
+        <div id="teamMembersContainer">
+            <div id="caberContainer">
+                <div class="bio">
+                    <img class="headshot" src="images/caber.jpg" alt="Headshot of Caber">
+                    <div class="bioText">
+                        <h2 class="orange font">Caber Caldwell</h2>
+                        <p class="blue font">After graduating with a master's degree in "Looking at the weather" from Yale, Caber fulfilled his life long dream of joining a news team. Now, Caber enjoys sipping room temperature root beers while sitting on his porch radaring traffic. Caber also enjoys finding time for his hobbies, such as semi-perfessional macaroni art. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="josiahContainer">
+                <div class="bio">
+                    <img class="headshot" src="images/josiah.jpg" alt="Headshot of Josiah">
+                    <div class="bioText">
+                        <h2 class="orange font">Josiah Shirley</h2>
+                        <p class="blue font">Josiah doesn't have much in the way of news experience, but what he lacks in the way of everything valuable, he makes up for with his can-do attitude! Josiah enjoys going to the local zoo and throwing things at the monkeys. He also enjoys going to bars, ordering only water, and leaving without tipping.</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js" defer></script>
+    <script src="service-worker.js" defer></script>
 </body>
-
-<footer>
-  <h3>Caber Caldwell</h3>
-  <p>(406) 403-2976 <br> cabercaldwell@outlook.com
-  </p>
-
-  <p id="copy">
-    <br> 
-    Copyright © 2023 Caber Caldwell. All Rights Reserved
-  </p>
-</footer>
 </html>
